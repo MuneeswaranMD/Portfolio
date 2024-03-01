@@ -1,0 +1,494 @@
+.custom-shape-divider-bottom-1704176977 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704176977 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-bottom-1704176977 .shape-fill {
+  fill: #FEFEFF;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0BCEAF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #078571;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #020202 !important;
+}
+
+
+
+/********** Template CSS ************/
+
+
+.text-stroke-header {
+  -webkit-text-stroke: 3px #ffffff;
+  color: transparent;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.btn-social {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+
+
+
+/* ================ Navigation Menu ====================*/
+
+
+.navbar-light {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 25px 10px;
+  color: #17181a;
+  font-weight: 500;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0BCEAF;
+}
+
+
+
+
+/*===================== Hero section ======================*/
+
+.about-img {
+  margin-right: -100px;
+
+  width: 520px;
+  height: 480px;
+  border: 5px solid rgb(255, 255, 255);
+
+  padding: 2%;
+  border-radius: 50%;
+
+}
+
+.ball-holder {
+  position: absolute;
+  float: right;
+  width: 395px;
+  height: 480px;
+  left: 10%;
+  top: 0%;
+  animation: loading 5.0s linear infinite;
+
+}
+
+.ball-holder1 {
+  position: absolute;
+  float: right;
+  width: 395px;
+  height: 480px;
+  left: 10%;
+  animation-play-state: inherit;
+  top: 0%;
+  animation: loading1 5.0s linear infinite;
+}
+
+.ball-holder2 {
+  position: absolute;
+  float: right;
+  width: 395px;
+  height: 480px;
+  left: 10%;
+  top: 0%;
+  animation: loading2 5.0s linear infinite;
+}
+
+.ball-holder3 {
+  position: absolute;
+  float: right;
+  width: 395px;
+  height: 480px;
+  left: 10%;
+  top: 0%;
+  animation: loading4 5.0s linear infinite;
+}
+
+.ball-holder4 {
+  position: absolute;
+  float: right;
+  width: 395px;
+  height: 480px;
+  left: 10%;
+  top: 0%;
+  animation: loading3 5.0s linear infinite;
+
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(72deg);
+  }
+}
+
+@keyframes loading1 {
+  from {
+    transform: rotate(72deg);
+  }
+
+  to {
+    transform: rotate(142deg);
+  }
+}
+
+@keyframes loading3 {
+  from {
+    transform: rotate(142deg);
+  }
+
+  to {
+    transform: rotate(214deg);
+  }
+}
+
+@keyframes loading2 {
+  from {
+    transform: rotate(214deg);
+  }
+
+  to {
+    transform: rotate(286deg);
+  }
+}
+
+@keyframes loading4 {
+  from {
+    transform: rotate(286deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ball {
+  position: absolute;
+  top: 70px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+}
+
+.display-1 {
+  font-size: 160px;
+  font-weight: 1000;
+
+}
+
+.position-absolute {
+  font-weight: 700;
+
+}
+
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.blue {
+  background-color: #1c5ce6;
+  color: #ffffff;
+}
+
+.btn {
+  border: 2px solid rgb(29, 105, 247);
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-blue {
+  border: 2.4px solid #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .about-img {
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+  }
+}
+
+/*===================== Progress Bar ====================*/
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+
+/* =================== Queality ======================*/
+.ex-me {
+  margin-top: 35px;
+}
+
+
+/* =================== Service Section ==================*/
+.service-h4 {
+  padding-bottom: 30px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+
+.service-box {
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.service-box:hover {
+  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705);
+
+}
+
+/* =================== Portfolio section ==================*/
+
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+/* ====================== Testimonial ================*/
+.testimonial-carousel .text-center {
+  background-color: #eaecf0d0;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+
+.testimonial-carousel .text-center h4 {
+  color: #020202;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: #0BCEAF;
+}
+
+
+
+/* ========================== Contact Us ========================*/
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*====================== Back to buttom ==================*/
+
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+.botao {
+  margin-bottom: 200px;
+  width: 125px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px rgba(107, 221, 215, 0.37);
+  padding: 5px 10px;
+  background: rgb(197, 47, 47);
+  background: linear-gradient(160deg, rgb(176, 192, 231) 0%, rgb(53, 62, 88) 5%, rgrgb(127, 152, 211)1%, rgb(11, 27, 31) 57%, rgb(26, 127, 147) 71%);
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 505;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px rgba(59, 190, 230, 0.568));
+  transition: .5s linear;
+}
+
+.botao .mysvg {
+  display: none;
+}
+
+.botao:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .5s linear;
+}
+
+.botao:hover .texto {
+  display: none;
+}
+
+.botao:hover .mysvg {
+  display: inline;
+}
+
+#text {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+.imgg {
+  border-radius: 50px;
+  border: 2px solid white;
+}
