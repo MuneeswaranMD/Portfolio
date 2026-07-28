@@ -80,13 +80,18 @@
 
     // Active link update on scroll
     $(window).scroll(function() {
-        var scrollDistance = $(window).scrollTop() + 100;
+        var scrollDistance = $(window).scrollTop() + 120;
         
-        // Assign active class to nav links while scrolling
-        $('div[id]').each(function(i, item) {
-            if ($(item).offset().top <= scrollDistance) {
-                $('.navbar-nav a.active').removeClass('active');
-                $('.navbar-nav a').eq(i).addClass('active');
+        $('.navbar-nav a').each(function() {
+            var hash = this.hash;
+            if (hash && $(hash).length) {
+                var $target = $(hash);
+                var top = $target.offset().top;
+                var bottom = top + $target.outerHeight();
+                if (scrollDistance >= top && scrollDistance < bottom) {
+                    $('.navbar-nav a').removeClass('active');
+                    $(this).addClass('active');
+                }
             }
         });
     }).scroll();
