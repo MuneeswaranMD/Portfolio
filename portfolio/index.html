@@ -2,1046 +2,1146 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Muneeswaran P | Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Muneeswaran P, NOC Engineer, Cloud Engineer, Full Stack Developer, SaaS Product Builder, Portfolio"
-        name="keywords">
-    <meta
-        content="Portfolio of Muneeswaran P - NOC Engineer at HCLTech, Cloud Engineer, Full Stack Developer, SaaS Product Builder, and Gen AI Enthusiast."
-        name="description">
+  <meta charset="utf-8">
+  <title>Muneeswaran | Freelance Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Muneeswaran, Freelance Web Developer, NOC Engineer, HCLTech, SaaS Builder, Next.js, Cloud Developer, Chennai, ERP, Full Stack, Portfolio">
+  <meta name="description"
+    content="Portfolio of Muneeswaran - Freelance Web Developer and NOC Engineer at HCLTech. Explore full-stack SaaS platforms, ERP systems, live commerce, and cloud architectures.">
 
-    <!-- Favicon -->
-    <link href="img/profile_image.jpg" rel="icon" type="image/jpeg">
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muneeswaran | Freelance Web Developer">
+  <meta property="og:description"
+    content="Building digital experiences that make an impact. Full-stack SaaS platforms, Cloud solutions, and enterprise software.">
+  <meta property="og:image" content="img/profile_image.jpg">
+  <meta name="theme-color" content="#080808">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Favicon -->
+  <link href="img/profile_image.jpg" rel="icon" type="image/jpeg">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Web Fonts (Inter & Bebas Neue for Netflix Aesthetic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 4.6 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Customized Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Netflix Cinematic Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0">Muneeswaran P</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+
+  <!-- ===================================================================
+       1. NAVIGATION BAR (NETFLIX CINEMATIC)
+       =================================================================== -->
+  <header class="netflix-navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Personal Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Muneeswaran Home">
+        <span class="brand-title">MUNEESWARAN<span class="brand-dot">.</span></span>
+        <span class="brand-sub">PORTFOLIO</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">My Projects</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Nav Actions -->
+      <div class="nav-actions">
+        <!-- Search bar trigger -->
+        <div class="nav-search-wrapper" id="navSearchWrapper">
+          <div class="nav-search-input-box">
+            <i class="fa fa-search text-muted mr-1" style="font-size: 0.85rem;"></i>
+            <input type="text" id="navSearchInput" placeholder="Titles, stack..." aria-label="Search projects">
+            <button class="nav-search-clear" id="navSearchClear" aria-label="Clear search">
+              <i class="fa fa-times"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#skill" class="nav-item nav-link">Skills</a>
-                    <a href="#business" class="nav-item nav-link">Business</a>
-                    <a href="#qualification" class="nav-item nav-link">Experience</a>
-                    <a href="#portfolio" class="nav-item nav-link">Projects</a>
-                    <a href="#contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="#contact" class="btn btn-menu d-none d-lg-block ml-3">Hire Me</a>
-            </div>
+          </div>
+          <button class="search-toggle-btn" id="searchToggle" aria-label="Open project search" title="Search projects (Press '/')">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
-    </nav>
-    <!-- Navbar End -->
 
-    <!-- Hero Section Start -->
-    <div id="home">
-        <div class="container">
-            <div class="row align-items-center" style="min-height: calc(100vh - 100px);">
-                <div class="col-lg-7 text-center text-lg-left pr-lg-5">
-                    <span class="hero-subtitle">Welcome to my space</span>
-                    <h1 class="hero-title">Muneeswaran P</h1>
-                    <div class="mb-4">
-                        <span class="h4 text-white">I'm a </span>
-                        <span class="h4 typed-text-output"></span>
-                        <div class="typed-text d-none">Network Engineer, Cloud Engineer, Full Stack Developer, SaaS
-                            Product Builder, Gen AI Enthusiast</div>
-                    </div>
-                    <p class="hero-description">
-                        Currently working as a NOC Engineer at HCLTech with expertise in Cloud Computing, Network
-                        Operations, Full Stack Development, SaaS Platforms, and Generative AI. Passionate about building
-                        scalable software products that solve real-world business challenges.
-                    </p>
-                    <div class="hero-buttons mt-4 justify-content-center justify-content-lg-start">
-                        <a href="./img/Muneeswaran_Resume (3).pdf" class="btn btn-primary-custom" download>
-                            <i class="fa fa-download mr-2"></i>Download Resume
-                        </a>
-                        <a href="#portfolio" class="btn btn-secondary-custom">
-                            <i class="fa fa-folder-open mr-2"></i>View Projects
-                        </a>
-                        <a href="#contact" class="btn btn-secondary-custom">
-                            <i class="fa fa-envelope mr-2"></i>Contact Me
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0">
-                    <div class="hero-img-container">
-                        <div class="hero-img-wrapper">
-                            <img src="./img/profile_image.jpg"
-                                alt="Muneeswaran P Profile">
-                        </div>
-                        <!-- Surrounding orbit elements -->
-                        <div class="tech-badge-orbit badge-1" title="AWS">
-                            <img src="./img/library.png" alt="Cloud"> <!-- Reusable icon from the assets -->
-                        </div>
-                        <div class="tech-badge-orbit badge-2" title="Java">
-                            <img src="./img/java.png" alt="Java">
-                        </div>
-                        <div class="tech-badge-orbit badge-3" title="JavaScript">
-                            <img src="./img/js.png" alt="JS">
-                        </div>
-                        <div class="tech-badge-orbit badge-4" title="HTML5">
-                            <img src="./img/html-5.png" alt="HTML">
-                        </div>
-                        <div class="tech-badge-orbit badge-5" title="CSS3">
-                            <img src="./img/css-3.png" alt="CSS">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Download Resume Button -->
+        <a href="./img/Muneeswaran_Resume (3).pdf" class="btn-resume" download aria-label="Download Muneeswaran's Resume">
+          <i class="fa fa-download"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Netflix Profile Icon -->
+        <div class="nav-profile" title="Muneeswaran • Founder & Lead Developer">
+          <img src="img/profile_image.jpg" alt="Muneeswaran Avatar" class="profile-avatar">
         </div>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
     </div>
-    <!-- Hero Section End -->
+  </header>
 
-    <!-- About Section Start -->
-    <div id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">About</span>
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 text-center mb-5 mb-lg-0">
-                    <div class="glass-card d-inline-block p-3" style="border-radius: 30px;">
-                        <img class="img-fluid" src="img/profile_image.jpg"
-                            alt="About Muneeswaran"
-                            style="border-radius: 20px; max-width: 320px; width: 100%; object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4 text-gradient">NOC Engineer & Full Stack Innovator</h3>
-                    <p class="mb-4">
-                        I am a Computer Science Engineering graduate from V.S.B College of Engineering Technical Campus
-                        with hands-on experience in Network Operations, Cloud Computing, Full Stack Development, and
-                        SaaS Product Development.
-                    </p>
-                    <p class="mb-4">
-                        Currently working as a NOC Engineer at HCLTech, I specialize in maintaining enterprise-grade
-                        network infrastructure while actively building cloud-native applications, ERP platforms, billing
-                        systems, and live-commerce solutions.
-                    </p>
-                    <p class="mb-4">
-                        My goal is to leverage technology to create scalable, intelligent, and impactful products that
-                        solve real-world problems.
-                    </p>
-                    <div class="about-stats mt-5">
-                        <div class="stat-item">
-                            <span class="stat-num">2+</span>
-                            <span class="stat-label">Years of Dev Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">6+</span>
-                            <span class="stat-label">Successful Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">6+</span>
-                            <span class="stat-label">Certifications Obtained</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">8.1</span>
-                            <span class="stat-label">B.E. CGPA</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- ===================================================================
+       2. CINEMATIC HERO SECTION (NETFLIX BILLBOARD)
+       =================================================================== -->
+  <section class="hero-billboard" id="home">
+    <!-- Gradient Layer for Contrast & Vignette -->
+    <div class="hero-gradient-overlay"></div>
+    <!-- Soft Animated Red Ambient Glow -->
+    <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+        <!-- Original Tag Badge -->
+        <div class="hero-original-badge">
+          <span class="badge-icon">M</span>
+          <span class="badge-text">ORIGINAL SHOWCASE</span>
         </div>
+
+        <!-- Main Cinematic Title -->
+        <h1 class="hero-main-title">MUNEESWARAN</h1>
+
+        <!-- Role Subtitle -->
+        <div class="hero-sub-title">
+          <span>Freelance Web Developer</span>
+          <span class="divider-dot">•</span>
+          <span>Full-Stack & Cloud Engineer</span>
+        </div>
+
+        <!-- Netflix Metadata Chips -->
+        <div class="hero-meta-row">
+          <span class="meta-match"><i class="fa fa-thumbs-up"></i> 99% Match</span>
+          <span class="meta-pill">Full-Stack & Cloud</span>
+          <span class="meta-pill">SaaS Architect</span>
+          <span class="meta-pill">NOC Operations</span>
+          <span class="meta-badge-hd">4K DEV</span>
+        </div>
+
+        <!-- Headline & Description -->
+        <h2 class="hero-headline">"Building Digital Experiences That Make an Impact."</h2>
+        <p class="hero-description">
+          I'm Muneeswaran, a freelance web developer and cloud engineer. I build modern, scalable web applications, business platforms, and custom digital solutions that help businesses establish a powerful online presence.
+        </p>
+
+        <!-- Netflix Action Buttons -->
+        <div class="hero-cta-buttons">
+          <a href="#projects" class="btn-netflix-play">
+            <i class="fa fa-play"></i>
+            <span>Explore My Projects</span>
+          </a>
+          <a href="#about" class="btn-netflix-info">
+            <i class="fa fa-info-circle"></i>
+            <span>More About Me</span>
+          </a>
+          <a href="./img/Muneeswaran_Resume (3).pdf" class="btn-netflix-secondary" download>
+            <i class="fa fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        </div>
+
+        <!-- Real portrait: keep this path replaceable for future image updates. -->
+        <div class="hero-portrait-stage" data-portrait-stage>
+          <div class="hero-portrait-ambient" aria-hidden="true"></div>
+          <div class="hero-portrait-orbit hero-portrait-orbit-one" aria-hidden="true"></div>
+          <div class="hero-portrait-orbit hero-portrait-orbit-two" aria-hidden="true"></div>
+          <div class="hero-portrait-card" data-portrait-card>
+            <div class="hero-portrait-glow" aria-hidden="true"></div>
+            <img src="img/profile_image_black.png" alt="Muneeswaran, Freelance Web Developer" class="hero-portrait-img" loading="eager" fetchpriority="high">
+            <div class="hero-portrait-rim" aria-hidden="true"></div>
+          </div>
+          <span class="hero-portrait-caption">MUNEESWARAN <span>/</span> FULL-STACK</span>
+        </div>
+      </div>
     </div>
-    <!-- About Section End -->
+  </section>
 
-    <!-- Skills Section Start -->
-    <div id="skill">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">Skills</span>
-                <h2 class="section-title">My Skills</h2>
-            </div>
-            <div class="row">
-                <!-- Cloud & DevOps -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-cloud"></i> Cloud & DevOps
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fab fa-aws text-warning"></i> AWS</span>
-                            <span class="skill-badge"><i class="fab fa-google text-danger"></i> GCP</span>
-                            <span class="skill-badge"><i class="fa-solid fa-fire text-orange"
-                                    style="color: #FFA611;"></i> Firebase</span>
-                            <span class="skill-badge"><i class="fa-solid fa-database text-success"></i> Supabase</span>
-                            <span class="skill-badge"><i class="fab fa-docker text-primary"></i> Docker</span>
-                            <span class="skill-badge"><i class="fa fa-code-fork"></i> CI/CD Pipelines</span>
-                            <span class="skill-badge"><i class="fa fa-server"></i> Vercel</span>
-                            <span class="skill-badge"><i class="fa fa-cloud-upload"></i> Render</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Frontend Development -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-code"></i> Frontend Dev
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fab fa-react text-info"></i> React.js</span>
-                            <span class="skill-badge"><i class="fa-solid fa-n"></i> Next.js</span>
-                            <span class="skill-badge"><i class="fa-solid fa-shield-halved text-primary"></i>
-                                TypeScript</span>
-                            <span class="skill-badge"><i class="fab fa-js text-warning"></i> JavaScript</span>
-                            <span class="skill-badge"><i class="fa-solid fa-wind text-info"></i> Tailwind CSS</span>
-                            <span class="skill-badge"><i class="fab fa-bootstrap text-purple"
-                                    style="color: #7952b3;"></i> Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Backend Development -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-gears"></i> Backend Dev
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fab fa-node-js text-success"></i> Node.js</span>
-                            <span class="skill-badge"><i class="fa fa-server"></i> Express.js</span>
-                            <span class="skill-badge"><i class="fab fa-python text-info" style="color: #3776ab;"></i> Python</span>
-                            <span class="skill-badge"><i class="fa fa-network-wired"></i> REST APIs</span>
-                            <span class="skill-badge"><i class="fa fa-terminal"></i> Cloud Functions</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Databases -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-database"></i> Databases
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fa-solid fa-leaf text-success"></i> MongoDB</span>
-                            <span class="skill-badge"><i class="fa-solid fa-database text-info"></i> PostgreSQL</span>
-                            <span class="skill-badge"><i class="fa-solid fa-database text-primary"></i> MySQL</span>
-                            <span class="skill-badge"><i class="fa-solid fa-fire text-warning"></i> Firestore</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Networking -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-network-wired"></i> Networking & NOC
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fa fa-desktop"></i> NOC Operations</span>
-                            <span class="skill-badge"><i class="fa fa-chart-line"></i> Monitoring</span>
-                            <span class="skill-badge"><i class="fa fa-globe"></i> TCP/IP</span>
-                            <span class="skill-badge"><i class="fa fa-server"></i> DNS</span>
-                            <span class="skill-badge"><i class="fa fa-triangle-exclamation"></i> Incident Mgmt</span>
-                            <span class="skill-badge"><i class="fa fa-handshake"></i> SLA Management</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tools & Platforms -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card skill-category-card">
-                        <h4 class="skill-category-title">
-                            <i class="fa fa-screwdriver-wrench"></i> Tools & Platforms
-                        </h4>
-                        <div class="skill-badge-wrapper">
-                            <span class="skill-badge"><i class="fab fa-git-alt text-danger"></i> Git</span>
-                            <span class="skill-badge"><i class="fab fa-github"></i> GitHub</span>
-                            <span class="skill-badge"><i class="fa-solid fa-gem text-info"></i> Prisma</span>
-                            <span class="skill-badge"><i class="fa-solid fa-credit-card text-success"></i>
-                                Razorpay</span>
-                            <span class="skill-badge"><i class="fa-solid fa-message text-primary"></i> Twilio</span>
-                            <span class="skill-badge"><i class="fab fa-figma text-danger"></i> Figma</span>
-                            <span class="skill-badge"><i class="fa-solid fa-envelope-open text-orange"></i>
-                                Postman</span>
-                            <span class="skill-badge"><i class="fa-solid fa-bolt text-warning"></i> n8n</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- ===================================================================
+       3. SEARCH & FILTER SECTION
+       =================================================================== -->
+  <div class="search-filter-section" id="search-filter">
+    <div class="container">
+      <div class="search-filter-wrapper">
+        <!-- Category Filter Pills -->
+        <div class="filter-pills-row" role="tablist">
+          <button class="filter-pill active" data-filter="all">All Projects <span class="pill-count">9</span></button>
+          <button class="filter-pill" data-filter="featured">Featured <span class="pill-count">4</span></button>
+          <button class="filter-pill" data-filter="saas">SaaS & ERP <span class="pill-count">4</span></button>
+          <button class="filter-pill" data-filter="commerce">Live Commerce <span class="pill-count">2</span></button>
+          <button class="filter-pill" data-filter="web">Web Portals <span class="pill-count">3</span></button>
         </div>
+
+        <!-- Direct Search Bar -->
+        <div class="search-box-large">
+          <i class="fa fa-search search-icon"></i>
+          <input type="text" id="mainSearchInput" placeholder="Search title, tech (e.g. Next.js)..." aria-label="Search projects">
+          <i class="fa fa-times clear-btn" id="mainSearchClear" title="Clear search"></i>
+        </div>
+
+        <!-- Filter Count Feedback -->
+        <div class="search-results-feedback" id="searchResultsFeedback"></div>
+      </div>
     </div>
-    <!-- Skills Section End -->
+  </div>
 
-    <!-- Business & Freelance Platforms Section Start -->
-    <div id="business" class="py-5-custom">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">Agency</span>
-                <h2 class="section-title">Business & Freelance</h2>
-            </div>
-            <div class="row">
-                <!-- Averqon Digital Solutions -->
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="glass-card h-100 d-flex flex-column">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="edu-icon mr-3">
-                                <i class="fa fa-globe"></i>
-                            </div>
-                            <div>
-                                <span class="project-tag">Company & Agency</span>
-                                <h3 class="project-title m-0" style="font-size: 1.35rem;">Averqon Solutions</h3>
-                            </div>
-                        </div>
-                        <span class="project-role-badge mb-3"><i class="fa fa-user-tie mr-1"></i> Founder & CEO</span>
-                        <p class="project-desc flex-grow-1">
-                            Averqon is my software development and digital solutions company focused on building SaaS products, ERP systems, business automation tools, websites, mobile applications, cloud solutions, and AI-powered platforms.
-                        </p>
-                        <h5 class="text-white mb-2" style="font-size: 0.9rem; font-weight: 600;">Core Offerings:</h5>
-                        <div class="skill-badge-wrapper mb-4">
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> Custom Software</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> SaaS Products</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> ERP & CRM</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> Web Dev</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> Mobile Apps</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> Cloud & DevOps</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check text-info"></i> AI Solutions</span>
-                        </div>
-                        <div class="project-links mt-auto">
-                            <a href="https://averqon.in" target="_blank" class="project-btn-primary w-100 justify-content-center">
-                                <i class="fa fa-external-link-alt"></i> Visit Averqon
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <!-- ===================================================================
+       4. FEATURED PROJECTS CAROUSEL (NETFLIX ROWS)
+       =================================================================== -->
+  <section class="browse-section" id="projects">
+    <!-- Subtle Red Ambient Backlight -->
+    <div class="projects-ambient-backlight" aria-hidden="true"></div>
 
-                <!-- Averqon Admin Management Platform -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card h-100 d-flex flex-column">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="edu-icon mr-3">
-                                <i class="fa fa-gears"></i>
-                            </div>
-                            <div>
-                                <span class="project-tag">Operations Hub</span>
-                                <h3 class="project-title m-0" style="font-size: 1.35rem;">Admin Platform</h3>
-                            </div>
-                        </div>
-                        <span class="project-role-badge mb-3"><i class="fa fa-laptop-code mr-1"></i> Architect & Developer</span>
-                        <p class="project-desc flex-grow-1">
-                            A centralized administration platform used to manage clients, projects, employees, operations, business workflows, and company analytics.
-                        </p>
-                        <h5 class="text-white mb-2" style="font-size: 0.9rem; font-weight: 600;">Key Features:</h5>
-                        <div class="skill-badge-wrapper mb-4">
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> Client Management</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> Project Tracking</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> Employee Admin</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> Task Assigns</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> Analytics Dashboard</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-cube text-primary"></i> RBAC Security</span>
-                        </div>
-                        <div class="project-links mt-auto">
-                            <a href="https://averqon-backend.onrender.com/admin" target="_blank" class="project-btn-primary w-100 justify-content-center">
-                                <i class="fa fa-external-link-alt"></i> Admin Dashboard
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+      <!-- Section Header -->
+      <div class="projects-section-header">
+        <span class="projects-header-tag">Curated Showcase</span>
+        <h2 class="projects-main-title">Selected Projects</h2>
+        <p class="projects-main-subtitle">A collection of ideas transformed into digital experiences.</p>
+      </div>
 
-                <!-- Averqon Employee Portal -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="glass-card h-100 d-flex flex-column">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="edu-icon mr-3">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <div>
-                                <span class="project-tag">Internal Tools</span>
-                                <h3 class="project-title m-0" style="font-size: 1.35rem;">Employee Portal</h3>
-                            </div>
-                        </div>
-                        <span class="project-role-badge mb-3"><i class="fa fa-user-tie mr-1"></i> Founder & Developer</span>
-                        <p class="project-desc flex-grow-1">
-                            An internal employee management platform designed to streamline workforce management, attendance tracking, tasks, and team collaboration.
-                        </p>
-                        <h5 class="text-white mb-2" style="font-size: 0.9rem; font-weight: 600;">Key Features:</h5>
-                        <div class="skill-badge-wrapper mb-4">
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Work Dashboard</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Attendance Track</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Task Management</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Collaboration</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Performance Monitor</span>
-                            <span class="skill-badge py-1 px-2" style="font-size: 0.75rem;"><i class="fa fa-check-double text-success"></i> Leave Admin</span>
-                        </div>
-                        <div class="project-links mt-auto">
-                            <a href="https://averqon-backend.onrender.com/employee/dashboard" target="_blank" class="project-btn-primary w-100 justify-content-center">
-                                <i class="fa fa-external-link-alt"></i> Employee Portal
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Featured Project Hero Spotlight -->
+      <div class="featured-project-spotlight" data-project-id="averqon-erp">
+        <div class="spotlight-media-container">
+          <img src="img/portfolio-3.jpg" alt="School ERP Platform Featured Showcase" class="spotlight-image" loading="lazy">
+          <div class="spotlight-gradient-overlay"></div>
+          <div class="spotlight-red-glow" aria-hidden="true"></div>
         </div>
+        <div class="spotlight-details-panel">
+          <div class="spotlight-meta-tags">
+            <span class="spotlight-badge-primary"><i class="fa fa-star"></i> Featured Project</span>
+            <span class="spotlight-match-score"><i class="fa fa-bolt"></i> 99% Match</span>
+            <span class="spotlight-role-pill"><i class="fa fa-code"></i> Lead Full Stack Architect</span>
+          </div>
+          <h3 class="spotlight-project-title">School ERP Platform</h3>
+          <div class="spotlight-category-name">Enterprise Cloud SaaS • Multi-Tenant Architecture</div>
+          <p class="spotlight-description">
+            A comprehensive cloud-based School ERP solution built with multi-tenant architecture to manage educational institutions through a centralized platform. Features automated student admissions, fee tracking, role-based dashboards, and academic analytics for administrators, teachers, parents, and students.
+          </p>
+          <div class="spotlight-tech-tags">
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Prisma</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">Render</span>
+          </div>
+          <div class="spotlight-action-row">
+            <a href="https://averqonerp-web.onrender.com/" target="_blank" rel="noopener noreferrer" class="spotlight-btn-view" title="Open Live Project Demo">
+              <i class="fa fa-arrow-up-right-from-square"></i> View Project
+            </a>
+            <button class="spotlight-btn-details" data-action="view-details" data-project-id="averqon-erp">
+              <i class="fa fa-circle-info"></i> View Details
+            </button>
+            <a href="https://erp.averqon.in" target="_blank" rel="noopener noreferrer" class="spotlight-btn-subdomain" title="Visit School Subdomain Portal">
+              <i class="fa fa-globe"></i> Subdomain
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 1: ENTERPRISE PLATFORMS & SAAS -->
+      <div class="netflix-row" id="rowEnterprise">
+        <div class="row-header">
+          <h2 class="row-title">Enterprise Platforms & SaaS</h2>
+          <span class="row-counter">4 Platforms</span>
+        </div>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn btn-prev" data-target="trackEnterprise" aria-label="Previous items">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track" id="trackEnterprise">
+
+            <!-- Card 1: School ERP Platform -->
+            <div class="netflix-card" data-project-id="averqon-erp" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/portfolio-3.jpg" alt="School ERP Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">FLAGSHIP</span>
+                <span class="card-role-chip"><i class="fa fa-code"></i> Lead Architect</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">School ERP Platform</h3>
+                  <span class="card-match-badge">99% Match</span>
+                </div>
+                <div class="card-category">SaaS / School ERP Platform</div>
+                <p class="card-desc">
+                  A comprehensive cloud-based School ERP solution built with multi-tenant architecture to manage educational institutions through a centralized platform.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Prisma</span>
+                  <span class="tech-badge">Supabase</span>
+                  <span class="tech-badge">Tailwind</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://averqonerp-web.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Demo">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                  <a href="https://erp.averqon.in" target="_blank" rel="noopener noreferrer" class="card-btn-secondary card-btn-icon" title="School Subdomain">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Billing & Inventory -->
+            <div class="netflix-card" data-project-id="billing-inventory" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/portfolio-2.jpg" alt="Billing & Inventory Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">FINTECH</span>
+                <span class="card-role-chip"><i class="fa fa-laptop-code"></i> Full Stack Developer</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Billing & Inventory</h3>
+                  <span class="card-match-badge">98% Match</span>
+                </div>
+                <div class="card-category">FinTech / ERP Platform</div>
+                <p class="card-desc">
+                  A modern billing and inventory management platform designed for businesses to manage sales, purchases, stock, suppliers, and financial reports.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Prisma</span>
+                  <span class="tech-badge">Supabase</span>
+                  <span class="tech-badge">Tailwind</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://billing.averqon.in/login" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Demo">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Admin Management Hub -->
+            <div class="netflix-card" data-project-id="averqon-admin" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/portfolio-6.jpg" alt="Admin Management Platform" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">OPERATIONS</span>
+                <span class="card-role-chip"><i class="fa fa-laptop-code"></i> System Architect</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Admin Management Hub</h3>
+                  <span class="card-match-badge">95% Match</span>
+                </div>
+                <div class="card-category">Internal Management Command Hub</div>
+                <p class="card-desc">
+                  Centralized administration platform engineered to manage clients, projects, users, operations, and business analytics.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Supabase</span>
+                  <span class="tech-badge">Tailwind</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://averqon-backend.onrender.com/admin" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Demo">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Employee Workforce Portal -->
+            <div class="netflix-card" data-project-id="averqon-employee" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/5.jpg" alt="Employee Workforce Portal Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">WORKFORCE</span>
+                <span class="card-role-chip"><i class="fa fa-users"></i> Lead Developer</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Employee Portal</h3>
+                  <span class="card-match-badge">94% Match</span>
+                </div>
+                <div class="card-category">Workforce Management Dashboard</div>
+                <p class="card-desc">
+                  An internal employee platform designed to streamline workforce logs, attendance tracking, and task collaboration.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">React.js</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Firestore</span>
+                  <span class="tech-badge">Tailwind</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://averqon-backend.onrender.com/employee/dashboard" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Demo">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-btn btn-next" data-target="trackEnterprise" aria-label="Next items">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ROW 2: WEB APPLICATIONS & DIGITAL EXPERIENCES -->
+      <div class="netflix-row" id="rowDigital">
+        <div class="row-header">
+          <h2 class="row-title">Web Applications & Digital Experiences</h2>
+          <span class="row-counter">5 Platforms</span>
+        </div>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn btn-prev" data-target="trackDigital" aria-label="Previous items">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <div class="carousel-track" id="trackDigital">
+
+            <!-- Card 1: WhatNew Live Marketplace -->
+            <div class="netflix-card" data-project-id="whatnew-live" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/portfolio-5.jpg" alt="WhatNew Live Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">REAL-TIME</span>
+                <span class="card-role-chip"><i class="fa fa-video"></i> Lead Full Stack</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">WhatNew Live</h3>
+                  <span class="card-match-badge">97% Match</span>
+                </div>
+                <div class="card-category">Live Shopping / WebRTC Auction</div>
+                <p class="card-desc">
+                  A real-time live-commerce marketplace enabling buyers and sellers to interact through livestream shopping, auctions, and instant purchases.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">Socket.IO</span>
+                  <span class="tech-badge">WebRTC</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Razorpay</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://www.whatnew.live/" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Demo">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Digital Agency Web Platform -->
+            <div class="netflix-card" data-project-id="averqon-website" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/averqon-website.png" alt="Digital Agency Web Platform Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">SHOWCASE</span>
+                <span class="card-role-chip"><i class="fa fa-globe"></i> Lead Web Developer</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Digital Agency Platform</h3>
+                  <span class="card-match-badge">96% Match</span>
+                </div>
+                <div class="card-category">Agency & Software Solutions</div>
+                <p class="card-desc">
+                  Modern agency showcase portal featuring software engineering services, web platforms, mobile apps, and enterprise consultation solutions.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">React.js</span>
+                  <span class="tech-badge">Tailwind CSS</span>
+                  <span class="tech-badge">Vercel</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                  <a href="https://averqon.in" target="_blank" rel="noopener noreferrer" class="card-btn-secondary" title="View Project Live Site">
+                    <i class="fa fa-arrow-up-right-from-square"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Smart Order SaaS -->
+            <div class="netflix-card" data-project-id="smart-order-saas" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/4.png" alt="Smart Order SaaS" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">AUTOMATION</span>
+                <span class="card-role-chip"><i class="fa fa-laptop-code"></i> Developer</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Smart Order SaaS</h3>
+                  <span class="card-match-badge">93% Match</span>
+                </div>
+                <div class="card-category">WhatsApp Workflow Automation</div>
+                <p class="card-desc">
+                  Automating order flows, customer engagement via WhatsApp automation (Twilio), and multi-tenant operations.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">React.js</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Razorpay</span>
+                  <span class="tech-badge">Twilio</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary w-100" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Teknodo Store -->
+            <div class="netflix-card" data-project-id="teknodo-store" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/Screenshot (27).png" alt="Teknodo Store Preview" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">COMMERCE</span>
+                <span class="card-role-chip"><i class="fa fa-shopping-cart"></i> Full Stack</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Teknodo Store</h3>
+                  <span class="card-match-badge">90% Match</span>
+                </div>
+                <div class="card-category">Electronics & Mobile Portal</div>
+                <p class="card-desc">
+                  Online retail shopping showcase featuring smart watches, mobile devices, dynamic cart management, and deals.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary w-100" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Student Quiz Platform -->
+            <div class="netflix-card" data-project-id="student-quiz" tabindex="0">
+              <div class="card-thumbnail-box">
+                <img src="img/3.png" alt="Student Quiz System" class="card-img" loading="lazy">
+                <div class="card-vignette"></div>
+                <span class="card-top-badge">EDTECH</span>
+                <span class="card-role-chip"><i class="fa fa-graduation-cap"></i> Developer</span>
+              </div>
+              <div class="card-body">
+                <div class="card-header-line">
+                  <h3 class="card-title">Student Quiz Platform</h3>
+                  <span class="card-match-badge">92% Match</span>
+                </div>
+                <div class="card-category">Exam & Assessment Engine</div>
+                <p class="card-desc">
+                  Full-stack educational platform for conducting secure online examinations and managing automated student evaluations.
+                </p>
+                <div class="card-tech-list">
+                  <span class="tech-badge">React.js</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Express.js</span>
+                  <span class="tech-badge">MySQL</span>
+                </div>
+                <div class="card-actions">
+                  <button class="card-btn-primary w-100" data-action="view-details">
+                    <i class="fa fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-btn btn-next" data-target="trackDigital" aria-label="Next items">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty Search State -->
+      <div class="search-empty-state" id="searchEmptyState">
+        <div class="empty-icon"><i class="fa fa-film"></i></div>
+        <h3 class="empty-title">No matching titles found</h3>
+        <p class="empty-desc">Try checking your spelling or searching for a different technology or category keyword.</p>
+        <button class="btn-netflix-play" id="clearFiltersBtn">
+          <i class="fa fa-undo mr-2"></i> Clear All Filters
+        </button>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Experience Section Start -->
-    <div id="qualification">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">History</span>
-                <h2 class="section-title">Work Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-container left">
-                    <div class="glass-card timeline-content">
-                        <span class="timeline-date">August 2025 – Present</span>
-                        <h3 class="timeline-role text-gradient">NOC Engineer</h3>
-                        <span class="timeline-company">HCLTech</span>
-                        <ul class="timeline-list">
-                            <li>Monitor enterprise network infrastructure to ensure maximum uptime.</li>
-                            <li>Ensure high availability and strict SLA compliance across services.</li>
-                            <li>Perform incident management and root cause analysis (RCA) for network outages.</li>
-                            <li>Coordinate with infrastructure teams for swift issue resolution.</li>
-                            <li>Maintain operational excellence and runbooks across production environments.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-container right">
-                    <div class="glass-card timeline-content">
-                        <span class="timeline-date">September 2023 – November 2023</span>
-                        <h3 class="timeline-role text-gradient">Web Development Intern</h3>
-                        <span class="timeline-company">SmartKnower</span>
-                        <ul class="timeline-list">
-                            <li>Developed responsive, pixel-perfect web interfaces.</li>
-                            <li>Worked with HTML, CSS, JavaScript, and Bootstrap framework.</li>
-                            <li>Participated in project testing and static deployment setups.</li>
-                            <li>Collaborated with senior development teams to build scalable solutions.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- ===================================================================
+       5. ABOUT ME SECTION (CINEMATIC PROFILE SPOTLIGHT)
+       =================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle-tag">Spotlight</span>
+        <h2 class="section-headline">The Developer Behind the Projects</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Cinematic Portrait Poster Frame -->
+        <div class="about-poster-box">
+          <img src="img/profile_image.jpg" alt="Muneeswaran Portrait" class="about-profile-img">
+          <div class="about-poster-overlay">
+            <h3 class="poster-name">Muneeswaran P</h3>
+            <p class="poster-role">Freelance Web Developer • Full-Stack Engineer</p>
+          </div>
         </div>
+
+        <!-- Bio & Professional Overview -->
+        <div class="about-text-content">
+          <h3 class="about-lead">
+            Building modern web architectures, business applications, and scalable digital solutions that drive real results.
+          </h3>
+          <p class="about-body-p">
+            I am a Computer Science Engineering graduate from <strong>V.S.B College of Engineering Technical Campus</strong> (Graduated: 2025 | CGPA: 8.1) with hands-on expertise in Cloud Computing, Full-Stack Development, Network Operations, and SaaS platforms.
+          </p>
+          <p class="about-body-p">
+            Currently working as a <strong>NOC Engineer at HCLTech</strong>, I manage enterprise-scale network reliability while also building scalable multi-tenant ERP platforms, automated billing solutions, and real-time live commerce platforms as an independent freelance developer.
+          </p>
+
+          <!-- Key Metrics -->
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">8.1</span>
+              <span class="stat-label">B.E. CGPA</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="about-actions">
+            <a href="#contact" class="btn-netflix-play">
+              <i class="fa fa-envelope"></i> Let's Connect
+            </a>
+            <a href="./img/Muneeswaran_Resume (3).pdf" class="btn-netflix-secondary" download>
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Experience Section End -->
+  </section>
 
-    <!-- Projects Section Start -->
-    <div id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">Gallery</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="row mb-5 justify-content-center">
-                <div class="col-12 text-center">
-                    <button class="portfolio-filter-btn active" data-filter="*">All Projects</button>
-                    <button class="portfolio-filter-btn" data-filter=".production">Live Production Apps</button>
-                    <button class="portfolio-filter-btn" data-filter=".custom">IoT & Custom Apps</button>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <!-- averqonERP -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">SaaS / School ERP</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Founder & Full Stack Developer</span>
-                        <h3 class="project-title">averqonERP</h3>
-                        <p class="project-desc">A comprehensive cloud-based School ERP solution built with multi-tenant architecture to manage educational institutions through a centralized platform.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">Next.js</span>
-                            <span class="project-tech-badge">TypeScript</span>
-                            <span class="project-tech-badge">PostgreSQL</span>
-                            <span class="project-tech-badge">Prisma</span>
-                            <span class="project-tech-badge">Supabase</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://averqonerp-web.onrender.com/" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <button class="project-btn-secondary" data-toggle="modal" data-target="#averqonCredentialsModal">
-                                <i class="fa fa-key"></i> Credentials
-                            </button>
-                        </div>
-                    </div>
-                </div>
+  <!-- ===================================================================
+       6. SKILLS SHOWCASE SECTION (DARK CATEGORIZED GRID)
+       =================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle-tag">Tech Stack</span>
+        <h2 class="section-headline">Skills & Core Competencies</h2>
+      </div>
 
-                <!-- Billing & Inventory -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">FinTech / ERP</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Founder & Full Stack Developer</span>
-                        <h3 class="project-title">Billing & Inventory</h3>
-                        <p class="project-desc">A modern billing and inventory management platform designed for businesses to manage sales, purchases, stock, suppliers, and financial reports.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">Next.js</span>
-                            <span class="project-tech-badge">TypeScript</span>
-                            <span class="project-tech-badge">PostgreSQL</span>
-                            <span class="project-tech-badge">Prisma</span>
-                            <span class="project-tech-badge">Supabase</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://billing.averqon.in/login" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <button class="project-btn-secondary" data-toggle="modal" data-target="#billingCredentialsModal">
-                                <i class="fa fa-key"></i> Credentials
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WhatNew -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">Live Shopping / Auction</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Founder & Full Stack Developer</span>
-                        <h3 class="project-title">WhatNew Live</h3>
-                        <p class="project-desc">A real-time live-commerce marketplace enabling buyers and sellers to interact through livestream shopping, auctions, and instant purchases.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">Next.js</span>
-                            <span class="project-tech-badge">Socket.IO</span>
-                            <span class="project-tech-badge">WebRTC</span>
-                            <span class="project-tech-badge">PostgreSQL</span>
-                            <span class="project-tech-badge">Razorpay</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.whatnew.live/" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <button class="project-btn-secondary" data-toggle="modal" data-target="#whatnewCredentialsModal">
-                                <i class="fa fa-key"></i> Credentials
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Averqon Company Website -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">Company Website</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Founder & CEO</span>
-                        <h3 class="project-title">Averqon Website</h3>
-                        <p class="project-desc">Official portal showcasing software solutions, SaaS products, mobile apps, custom projects, and consultancy options.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">Next.js</span>
-                            <span class="project-tech-badge">React.js</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                            <span class="project-tech-badge">Vercel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://averqon.in" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Visit Averqon
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Averqon Admin Platform -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">Enterprise Staging</span>
-                        <span class="project-role-badge"><i class="fa fa-laptop-code mr-1"></i> System Architect & Developer</span>
-                        <h3 class="project-title">Averqon Admin</h3>
-                        <p class="project-desc">A centralized operations management system containing analytics, client tracking, and staff workflows.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">Next.js</span>
-                            <span class="project-tech-badge">PostgreSQL</span>
-                            <span class="project-tech-badge">Supabase</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://averqon-backend.onrender.com/admin" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Admin Dashboard
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Averqon Employee Portal -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item production">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">Workforce Staging</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Founder & Full Stack Developer</span>
-                        <h3 class="project-title">Employee Portal</h3>
-                        <p class="project-desc">Workforce dashboard and collaboration system for staff logs, task monitoring, and project allocations.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">React.js</span>
-                            <span class="project-tech-badge">Firebase</span>
-                            <span class="project-tech-badge">Firestore</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://averqon-backend.onrender.com/employee/dashboard" target="_blank" class="project-btn-primary">
-                                <i class="fa fa-external-link-alt"></i> Employee Dashboard
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Smart Order Automation -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item custom">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">SaaS / Automation</span>
-                        <span class="project-role-badge"><i class="fa fa-laptop-code mr-1"></i> Founder & Developer</span>
-                        <h3 class="project-title">Smart Order SaaS</h3>
-                        <p class="project-desc">A multi-tenant SaaS platform that automates ordering workflows, customer engagement via WhatsApp automation, and general business operations.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">React.js</span>
-                            <span class="project-tech-badge">Firebase</span>
-                            <span class="project-tech-badge">Razorpay</span>
-                            <span class="project-tech-badge">Twilio</span>
-                            <span class="project-tech-badge">Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Student Quiz Management System -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item custom">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">EdTech / Exam Platform</span>
-                        <span class="project-role-badge"><i class="fa fa-user-tie mr-1"></i> Developer</span>
-                        <h3 class="project-title">Student Quiz System</h3>
-                        <p class="project-desc">A full-stack educational platform for conducting secure online examinations and managing automated student assessments and dashboards.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">React.js</span>
-                            <span class="project-tech-badge">Node.js</span>
-                            <span class="project-tech-badge">Express.js</span>
-                            <span class="project-tech-badge">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Smart EV Management System -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item custom">
-                    <div class="glass-card project-card">
-                        <span class="project-tag">IoT / Hardware</span>
-                        <span class="project-role-badge"><i class="fa fa-microchip mr-1"></i> IoT Developer</span>
-                        <h3 class="project-title">Smart EV System</h3>
-                        <p class="project-desc">An IoT-powered electric vehicle management solution featuring gesture-based access control and smart telemetry monitoring.</p>
-                        <div class="project-tech-stack">
-                            <span class="project-tech-badge">IoT</span>
-                            <span class="project-tech-badge">Embedded Systems</span>
-                            <span class="project-tech-badge">C++</span>
-                            <span class="project-tech-badge">Hardware Sensors</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="skills-grid">
+        <!-- 1. Frontend Development -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-code skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Frontend Development</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fab fa-react" style="color: #61dafb;"></i> React.js</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-n"></i> Next.js</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-shield-halved" style="color: #3178c6;"></i> TypeScript</span>
+            <span class="skill-item-pill"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript (ES6+)</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-wind" style="color: #38bdf8;"></i> Tailwind CSS</span>
+            <span class="skill-item-pill"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</span>
+            <span class="skill-item-pill"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</span>
+            <span class="skill-item-pill"><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</span>
+          </div>
         </div>
+
+        <!-- 2. Backend Development -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-server skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Backend Development</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fab fa-node-js" style="color: #68a063;"></i> Node.js</span>
+            <span class="skill-item-pill"><i class="fa fa-terminal"></i> Express.js</span>
+            <span class="skill-item-pill"><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
+            <span class="skill-item-pill"><i class="fa fa-network-wired"></i> RESTful APIs</span>
+            <span class="skill-item-pill"><i class="fa fa-cloud"></i> Serverless Functions</span>
+            <span class="skill-item-pill"><i class="fa fa-plug"></i> WebSockets & WebRTC</span>
+          </div>
+        </div>
+
+        <!-- 3. Cloud & DevOps -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-cloud skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Cloud & DevOps</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fab fa-aws" style="color: #ff9900;"></i> AWS</span>
+            <span class="skill-item-pill"><i class="fab fa-google" style="color: #ea4335;"></i> GCP</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-fire" style="color: #ffa000;"></i> Firebase</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-database" style="color: #3ecf8e;"></i> Supabase</span>
+            <span class="skill-item-pill"><i class="fab fa-docker" style="color: #2496ed;"></i> Docker</span>
+            <span class="skill-item-pill"><i class="fa fa-code-fork"></i> CI/CD Pipelines</span>
+            <span class="skill-item-pill"><i class="fa fa-arrow-up-right-from-square"></i> Vercel</span>
+            <span class="skill-item-pill"><i class="fa fa-cloud-upload"></i> Render</span>
+          </div>
+        </div>
+
+        <!-- 4. Databases -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-database skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Databases & ORM</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fa-solid fa-database" style="color: #336791;"></i> PostgreSQL</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-gem" style="color: #2d3748;"></i> Prisma ORM</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-leaf" style="color: #47a248;"></i> MongoDB</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-database" style="color: #00758f;"></i> MySQL</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-fire" style="color: #ffca28;"></i> Cloud Firestore</span>
+          </div>
+        </div>
+
+        <!-- 5. AI, Integrations & Tooling -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-robot skill-cat-icon"></i>
+            <h3 class="skill-cat-title">AI & Integrations</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fa-solid fa-brain" style="color: #e50914;"></i> Gen AI & LLM APIs</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-bolt" style="color: #ff6d5a;"></i> n8n Workflows</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-credit-card" style="color: #0c2340;"></i> Razorpay</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-message" style="color: #f22f46;"></i> Twilio & WhatsApp</span>
+            <span class="skill-item-pill"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+            <span class="skill-item-pill"><i class="fa-solid fa-paper-plane" style="color: #ff6c37;"></i> Postman</span>
+            <span class="skill-item-pill"><i class="fab fa-figma" style="color: #f24e1e;"></i> Figma</span>
+          </div>
+        </div>
+
+        <!-- 6. Networking & NOC Operations -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa fa-network-wired skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Networking & NOC</h3>
+          </div>
+          <div class="skill-pill-container">
+            <span class="skill-item-pill"><i class="fa fa-desktop"></i> NOC Operations</span>
+            <span class="skill-item-pill"><i class="fa fa-chart-line"></i> Network Monitoring</span>
+            <span class="skill-item-pill"><i class="fa fa-globe"></i> TCP/IP Protocols</span>
+            <span class="skill-item-pill"><i class="fa fa-server"></i> DNS Management</span>
+            <span class="skill-item-pill"><i class="fa fa-triangle-exclamation"></i> Incident Mgmt & RCA</span>
+            <span class="skill-item-pill"><i class="fa fa-handshake"></i> SLA Compliance</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Projects Section End -->
+  </section>
 
-    <!-- Education & Certifications Start -->
-    <div class="py-5-custom"
-        style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);">
-        <div class="container">
-            <div class="row">
-                <!-- Education Section -->
-                <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5">
-                    <h3 class="mb-4 text-gradient"><i class="fa fa-graduation-cap mr-2"></i> Education</h3>
-                    <div class="glass-card edu-card">
-                        <div class="edu-icon">
-                            <i class="fa fa-university"></i>
-                        </div>
-                        <div>
-                            <h4 class="edu-title">Bachelor of Engineering</h4>
-                            <div class="edu-school">Computer Science and Engineering</div>
-                            <p class="mb-2">V.S.B College of Engineering Technical Campus</p>
-                            <div class="edu-meta">Graduated: 2025 | CGPA: 8.1</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Certifications Section -->
-                <div class="col-lg-6">
-                    <h3 class="mb-4 text-gradient"><i class="fa fa-certificate mr-2"></i> Certifications</h3>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-solid fa-cloud cert-icon text-warning"></i>
-                                <span class="cert-name">AWS Cloud Foundations</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-brands fa-react cert-icon text-info"></i>
-                                <span class="cert-name">React.js Certification</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-solid fa-database cert-icon text-primary"></i>
-                                <span class="cert-name">Oracle Database SQL</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-solid fa-code cert-icon text-success"></i>
-                                <span class="cert-name">Web Development</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-solid fa-compass-drafting cert-icon text-danger"></i>
-                                <span class="cert-name">UI/UX Design</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="cert-card">
-                                <i class="fa-brands fa-python cert-icon text-info"></i>
-                                <span class="cert-name">Python Programming</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- ===================================================================
+       7. EXPERIENCE & CERTIFICATIONS SECTION
+       =================================================================== -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle-tag">Track Record</span>
+        <h2 class="section-headline">Experience & Credentials</h2>
+      </div>
+
+      <div class="exp-cert-layout">
+        <!-- Professional Work Timeline -->
+        <div>
+          <h3 class="column-title"><i class="fa fa-briefcase"></i> Work Experience</h3>
+          <div class="timeline-stream">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-panel">
+                <span class="timeline-period">August 2025 – Present</span>
+                <h4 class="timeline-role">NOC Engineer</h4>
+                <span class="timeline-company">HCLTech</span>
+                <ul class="timeline-bullets">
+                  <li>Monitor enterprise network infrastructure to ensure maximum uptime and operational excellence.</li>
+                  <li>Ensure high availability and strict SLA compliance across client environments.</li>
+                  <li>Perform incident management and root cause analysis (RCA) for network outages.</li>
+                  <li>Coordinate with global infrastructure teams for swift troubleshooting and resolution.</li>
+                  <li>Maintain operational runbooks and continuous monitoring alerts.</li>
+                </ul>
+              </div>
             </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-panel">
+                <span class="timeline-period">2023 – Present</span>
+                <h4 class="timeline-role">Freelance Full-Stack Developer</h4>
+                <span class="timeline-company">Independent Practice</span>
+                <ul class="timeline-bullets">
+                  <li>Engineered custom cloud-native SaaS platforms, comprehensive ERP systems, and web applications.</li>
+                  <li>Architected multi-tenant school management software and real-time live-commerce marketplaces.</li>
+                  <li>Developed production billing and inventory suites featuring PostgreSQL, Prisma, and Supabase.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-panel">
+                <span class="timeline-period">September 2023 – November 2023</span>
+                <h4 class="timeline-role">Web Development Intern</h4>
+                <span class="timeline-company">SmartKnower</span>
+                <ul class="timeline-bullets">
+                  <li>Developed responsive, pixel-perfect web interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
+                  <li>Participated in project code reviews, component styling, and static deployment setups.</li>
+                  <li>Collaborated with senior development mentors on real-world frontend modules.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Certifications & Education -->
+        <div>
+          <h3 class="column-title"><i class="fa fa-certificate"></i> Verified Certifications</h3>
+          <div class="certs-grid">
+            <div class="cert-card-item">
+              <i class="fa-solid fa-cloud cert-badge-icon" style="color: #ff9900;"></i>
+              <div class="cert-info">
+                <h5>AWS Cloud Foundations</h5>
+                <span>Cloud Fundamentals</span>
+              </div>
+            </div>
+            <div class="cert-card-item">
+              <i class="fa-brands fa-react cert-badge-icon" style="color: #61dafb;"></i>
+              <div class="cert-info">
+                <h5>React.js Certification</h5>
+                <span>Modern Frontend</span>
+              </div>
+            </div>
+            <div class="cert-card-item">
+              <i class="fa-solid fa-database cert-badge-icon" style="color: #f80000;"></i>
+              <div class="cert-info">
+                <h5>Oracle Database SQL</h5>
+                <span>SQL & Relational DB</span>
+              </div>
+            </div>
+            <div class="cert-card-item">
+              <i class="fa-solid fa-code cert-badge-icon" style="color: #46d369;"></i>
+              <div class="cert-info">
+                <h5>Web Development</h5>
+                <span>Full-Stack Essentials</span>
+              </div>
+            </div>
+            <div class="cert-card-item">
+              <i class="fa-solid fa-compass-drafting cert-badge-icon" style="color: #ff6b6b;"></i>
+              <div class="cert-info">
+                <h5>UI/UX Design</h5>
+                <span>Product Design</span>
+              </div>
+            </div>
+            <div class="cert-card-item">
+              <i class="fa-brands fa-python cert-badge-icon" style="color: #3776ab;"></i>
+              <div class="cert-info">
+                <h5>Python Programming</h5>
+                <span>Logic & Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <h3 class="column-title mt-4"><i class="fa fa-graduation-cap"></i> Education</h3>
+          <div class="edu-highlight-panel">
+            <h4 class="edu-degree">Bachelor of Engineering (B.E.)</h4>
+            <div class="edu-field">Computer Science and Engineering</div>
+            <div class="edu-institution">V.S.B College of Engineering Technical Campus</div>
+            <div class="edu-grade"><i class="fa fa-star text-warning mr-1"></i> Graduated: 2025 | CGPA: 8.1</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Education & Certifications End -->
+  </section>
 
-    <!-- Contact Section Start -->
-    <div id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-bg-text">Connect</span>
-                <h2 class="section-title">Contact Me</h2>
+  <!-- ===================================================================
+       8. CONTACT SECTION (CINEMATIC FORM & DETAILS)
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle-tag">Inquire</span>
+        <h2 class="section-headline">Let's Build Something Great Together.</h2>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel">
+          <h3>Let's Connect</h3>
+          <p>
+            Have a website idea or need a custom digital solution? Let's connect and discuss your project. I am also available for consultations on SaaS architecture, full-stack development, and NOC engineering.
+          </p>
+
+          <div class="contact-channels">
+            <!-- Email -->
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa fa-envelope"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">Email</div>
+                <div class="channel-val">muneeswaranmd2004@gmail.com</div>
+              </div>
             </div>
-            <div class="row">
-                <!-- Contact Info -->
-                <div class="col-lg-5 mb-5 mb-lg-0 pr-lg-5">
-                    <h3 class="mb-4 text-gradient">Let's build something epic</h3>
-                    <p class="mb-5">I am open to discussions on NOC environments, cloud engineering roles, full-stack
-                        product development, and GenAI applications. Reach out to coordinate!</p>
 
-                    <div class="contact-info-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div>
-                            <span class="contact-label">Email</span>
-                            <div class="contact-val">muneeswaranmd2004@gmail.com</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div>
-                            <span class="contact-label">Phone</span>
-                            <div class="contact-val">+91 8300864084</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <span class="contact-label">Location</span>
-                            <div class="contact-val">Chennai, Tamil Nadu, India</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="col-lg-7">
-                    <div class="glass-card">
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control form-control-custom" id="name"
-                                        placeholder="Your Name" required="required" />
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control form-control-custom" id="email"
-                                        placeholder="Your Email" required="required" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-custom" id="subject"
-                                    placeholder="Subject" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-custom" rows="5" id="message"
-                                    placeholder="Message" required="required"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary-custom w-100" id="sendMessageButton">
-                                <i class="fa fa-paper-plane mr-2"></i>Send Message
-                            </button>
-                            <div id="success" class="mt-3"></div>
-                        </form>
-                    </div>
-                </div>
+            <!-- Phone -->
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa fa-phone"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">Phone</div>
+                <div class="channel-val">+91 8300864084</div>
+              </div>
             </div>
+
+            <!-- Location -->
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div class="channel-text">
+                <div class="channel-label">Location</div>
+                <div class="channel-val">Chennai, Tamil Nadu, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Handles -->
+          <div class="contact-social-row">
+            <a href="https://github.com/MuneeswaranMD" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/muneeswaran-p-bab627287" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/TEKNODOTech2004" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Twitter Profile" title="Twitter / X">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/teknodo39/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram Profile" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-panel">
+          <form id="netflixContactForm" novalidate>
+            <div class="form-row-custom">
+              <div class="form-group-custom">
+                <label for="contactName" class="form-label-custom">Your Name *</label>
+                <input type="text" id="contactName" class="form-control-netflix" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group-custom">
+                <label for="contactEmail" class="form-label-custom">Your Email *</label>
+                <input type="email" id="contactEmail" class="form-control-netflix" placeholder="e.g. john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row-custom">
+              <div class="form-group-custom">
+                <label for="contactProjectType" class="form-label-custom">Project Type</label>
+                <select id="contactProjectType" class="form-control-netflix">
+                  <option value="SaaS & ERP Application">SaaS & ERP Platform</option>
+                  <option value="Web Development">Custom Web Application</option>
+                  <option value="E-Commerce & Live Auction">E-Commerce & Marketplace</option>
+                  <option value="Cloud / NOC Consulting">Cloud & NOC Engineering</option>
+                  <option value="Other Project Inquiry">Other Inquiries</option>
+                </select>
+              </div>
+              <div class="form-group-custom">
+                <label for="contactSubject" class="form-label-custom">Subject *</label>
+                <input type="text" id="contactSubject" class="form-control-netflix" placeholder="Project title or inquiry" required>
+              </div>
+            </div>
+
+            <div class="form-group-custom">
+              <label for="contactMessage" class="form-label-custom">Project Details or Message *</label>
+              <textarea id="contactMessage" class="form-control-netflix" rows="5" placeholder="Tell me about your requirements, timeline, or business challenge..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-netflix-submit" id="contactSubmitBtn">
+              <i class="fa fa-paper-plane"></i> Send Message
+            </button>
+
+            <!-- Feedback Alerts -->
+            <div class="form-feedback-alert" id="contactAlertSuccess" role="alert" aria-live="polite"></div>
+            <div class="form-feedback-alert" id="contactAlertError" role="alert" aria-live="assertive"></div>
+          </form>
+        </div>
+      </div>
     </div>
-    <!-- Contact Section End -->
+  </section>
 
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="container text-center">
-            <h3 class="text-white mb-2">Muneeswaran P</h3>
-            <p class="mb-4">Building Scalable Software • Cloud Solutions • SaaS Products • AI Applications</p>
-            <div class="footer-social-links">
-                <a href="https://github.com/MuneeswaranMD" target="_blank" class="footer-social-btn"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/muneeswaran-p-bab627287" target="_blank" class="footer-social-btn"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/TEKNODOTech2004" target="_blank" class="footer-social-btn"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/teknodo39/" target="_blank" class="footer-social-btn"><i
-                        class="fab fa-instagram"></i></a>
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skill">Skills</a>
-                <a href="#portfolio">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <p class="small text-muted mt-4 mb-0">&copy; 2026 Muneeswaran P. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <!-- Footer End -->
+  <!-- ===================================================================
+       9. NETFLIX FOOTER
+       =================================================================== -->
+  <footer class="netflix-footer">
+    <div class="container">
+      <div class="footer-top-brand">
+        <a href="#home" class="brand-title" style="font-size: 1.8rem;">MUNEESWARAN<span class="brand-dot">.</span></a>
+        <p class="text-secondary mt-1" style="font-size: 0.85rem;">Cinematic Developer Portfolio • Built for Impact</p>
+      </div>
 
-    <!-- Scroll Indicators -->
-    <i class="fa fa-angle-down scroll-to-bottom"></i>
-    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+      <div class="footer-links-grid">
+        <a href="#home" class="footer-link-item">Home Billboard</a>
+        <a href="#projects" class="footer-link-item">My Projects</a>
+        <a href="#about" class="footer-link-item">About Developer</a>
+        <a href="#skills" class="footer-link-item">Technical Skills</a>
+        <a href="#experience" class="footer-link-item">Experience & NOC</a>
+        <a href="#contact" class="footer-link-item">Contact & Inquiries</a>
+        <a href="./img/Muneeswaran_Resume (3).pdf" class="footer-link-item" download>Download Resume</a>
+      </div>
 
-    <!-- Modals for Credentials -->
-    <!-- averqonERP Modal -->
-    <div class="modal fade" id="averqonCredentialsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content modal-content-custom">
-                <div class="modal-header modal-header-custom">
-                    <h5 class="modal-title modal-title-custom"><i class="fa fa-university mr-2"></i>averqonERP Access
-                    </h5>
-                    <button type="button" class="close close-custom" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">Explore the multi-tenant system for the school subdomain <strong
-                            class="text-info">erp.averqon.in</strong> via these pre-configured accounts. Select any role
-                        to copy its credentials.</p>
-                    <div class="table-responsive">
-                        <table class="credentials-table">
-                            <thead>
-                                <tr>
-                                    <th>Role</th>
-                                    <th>Email Address</th>
-                                    <th>Password</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>School Admin</strong></td>
-                                    <td>
-                                        <span>admin@greenvalley.edu</span>
-                                        <button class="copy-btn" data-copy="admin@greenvalley.edu"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                    <td>
-                                        <span>Demo@1234</span>
-                                        <button class="copy-btn" data-copy="Demo@1234"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Principal</strong></td>
-                                    <td>
-                                        <span>principal@greenvalley.edu</span>
-                                        <button class="copy-btn" data-copy="principal@greenvalley.edu"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                    <td>
-                                        <span>Demo@1234</span>
-                                        <button class="copy-btn" data-copy="Demo@1234"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Teacher</strong></td>
-                                    <td>
-                                        <span>ramesh.krishnamurthy@greenvalley.edu</span>
-                                        <button class="copy-btn" data-copy="ramesh.krishnamurthy@greenvalley.edu"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                    <td>
-                                        <span>Demo@1234</span>
-                                        <button class="copy-btn" data-copy="Demo@1234"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Accountant</strong></td>
-                                    <td>
-                                        <span>ramya.krishnan@greenvalley.edu</span>
-                                        <button class="copy-btn" data-copy="ramya.krishnan@greenvalley.edu"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                    <td>
-                                        <span>Demo@1234</span>
-                                        <button class="copy-btn" data-copy="Demo@1234"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="alert-demo-note">
-                        <i class="fa fa-exclamation-triangle"></i>
-                        <span>Note: Demo accounts are loaded with sample sandbox data only. Any custom configurations
-                            will refresh periodically.</span>
-                    </div>
-                </div>
-                <div class="modal-footer modal-footer-custom">
-                    <a href="https://averqonerp-web.onrender.com/" target="_blank" class="project-btn-primary">
-                        <i class="fa fa-external-link-alt"></i> Open Portal
-                    </a>
-                    <a href="https://erp.averqon.in" target="_blank" class="project-btn-primary">
-                        <i class="fa fa-external-link-alt"></i> School Subdomain
-                    </a>
-                    <button type="button" class="btn btn-secondary-custom py-2 px-3 text-white"
-                        style="border-radius: 8px; font-size: 0.85rem;" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+      <div class="footer-service-code-box">
+        <button class="service-code-btn" id="serviceCodeBtn">Service Code: DEV-2026</button>
+      </div>
+
+      <div class="footer-copyright">
+        &copy; 2026 Muneeswaran P. Freelance Web Developer. All rights reserved.<br>
+       
+      </div>
     </div>
+  </footer>
 
-    <!-- Billing & Inventory Modal -->
-    <div class="modal fade" id="billingCredentialsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content modal-content-custom">
-                <div class="modal-header modal-header-custom">
-                    <h5 class="modal-title modal-title-custom"><i class="fa fa-credit-card mr-2"></i>Billing & Inventory
-                        Access</h5>
-                    <button type="button" class="close close-custom" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">Use the credentials below to log into the billing portal demo dashboard.</p>
-                    <div class="table-responsive">
-                        <table class="credentials-table">
-                            <thead>
-                                <tr>
-                                    <th>Field</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Email</strong></td>
-                                    <td>
-                                        <span>muneeswaran@averqon.in</span>
-                                        <button class="copy-btn" data-copy="demo@averqon.in"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Password</strong></td>
-                                    <td>
-                                        <span>Munees@2004</span>
-                                        <button class="copy-btn" data-copy="Demo@123"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="alert-demo-note">
-                        <i class="fa fa-info-circle"></i>
-                        <span>This account has access to sales analytics, stock level checking, and invoices
-                            listing.</span>
-                    </div>
-                </div>
-                <div class="modal-footer modal-footer-custom">
-                    <a href="https://billing.averqon.in/login" target="_blank" class="project-btn-primary">
-                        <i class="fa fa-external-link-alt"></i> Open Portal
-                    </a>
-                    <button type="button" class="btn btn-secondary-custom py-2 px-3 text-white"
-                        style="border-radius: 8px; font-size: 0.85rem;" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+  <!-- ===================================================================
+       10. PROJECT DETAILS MODAL (NETFLIX TITLE PREVIEW DIALOG)
+       =================================================================== -->
+  <div class="netflix-modal-backdrop" id="projectDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalFloatingTitle">
+    <div class="netflix-modal-dialog">
+      <!-- Close Button (X) -->
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">
+        <i class="fa fa-times"></i>
+      </button>
+
+      <!-- Hero Header Billboard -->
+      <div class="modal-hero-cover">
+        <img src="" alt="" class="modal-hero-img">
+        <div class="modal-hero-gradient"></div>
+        <div class="modal-hero-floating-content">
+          <h2 class="modal-floating-title" id="modalFloatingTitle"></h2>
+          <div class="modal-floating-actions">
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn-netflix-play modal-live-demo-btn">
+              <i class="fa fa-play"></i> Live Demo
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn-netflix-info modal-subdomain-btn" style="display: none;">
+              <i class="fa fa-globe"></i> Subdomain
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- WhatNew Marketplace Modal -->
-    <div class="modal fade" id="whatnewCredentialsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content modal-content-custom">
-                <div class="modal-header modal-header-custom">
-                    <h5 class="modal-title modal-title-custom"><i class="fa fa-shopping-cart mr-2"></i>WhatNew
-                        Marketplace Access</h5>
-                    <button type="button" class="close close-custom" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p class="mb-4">Use the credentials below to log into the WhatNew Live shopping & auction
-                        marketplace.</p>
-                    <div class="table-responsive">
-                        <table class="credentials-table">
-                            <thead>
-                                <tr>
-                                    <th>Field</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Email</strong></td>
-                                    <td>
-                                        <span>demo@whatnew.live</span>
-                                        <button class="copy-btn" data-copy="demo@whatnew.live"><i
-                                                class="fa fa-copy mr-1"></i>Copy</button>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="alert-demo-note">
-                        <i class="fa fa-info-circle"></i>
-                        <span>This account has access to bid placing, live shopping sessions viewing, and items
-                            checkout.</span>
-                    </div>
-                </div>
-                <div class="modal-footer modal-footer-custom">
-                    <a href="https://www.whatnew.live/" target="_blank" class="project-btn-primary">
-                        <i class="fa fa-external-link-alt"></i> Open Portal
-                    </a>
-                    <button type="button" class="btn btn-secondary-custom py-2 px-3 text-white"
-                        style="border-radius: 8px; font-size: 0.85rem;" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+      <!-- Modal Body Content -->
+      <div class="modal-body-container">
+        <!-- Metadata Row -->
+        <div class="modal-meta-grid">
+          <span class="meta-match modal-match-score"><i class="fa fa-thumbs-up"></i> 99% Match</span>
+          <span class="meta-pill modal-role-pill">Lead Full Stack</span>
+          <span class="meta-pill modal-category-pill">SaaS Platform</span>
+          <span class="meta-badge-hd">4K DEV</span>
         </div>
+
+        <!-- Full Description -->
+        <p class="modal-desc-full"></p>
+
+        <!-- Credentials Sandbox Table (for School ERP, Billing & Inventory, WhatNew Live) -->
+        <div class="modal-credentials-box" style="display: none;">
+          <h4><i class="fa fa-key text-warning"></i> Demo Credentials & Access</h4>
+          <p class="cred-instructions">Click the copy buttons to copy credentials for testing the demo sandbox accounts:</p>
+          <div style="overflow-x: auto;">
+            <table class="cred-table">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Populated dynamically via vanilla JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Key Features List -->
+        <div class="modal-features-list">
+          <h4>Key Architectural Features</h4>
+          <ul class="features-bullets">
+            <!-- Populated dynamically -->
+          </ul>
+        </div>
+
+        <!-- Complete Tech Stack Badges -->
+        <div class="modal-tech-box">
+          <h4>Technologies Used</h4>
+          <div class="card-tech-list modal-tech-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <!-- Back To Top Floating Action Button -->
+  <a href="#" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
 
-    <!-- Custom JavaScript -->
-    <script src="js/main.js"></script>
+  <!-- Vanilla JavaScript Application Script -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
