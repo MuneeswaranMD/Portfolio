@@ -15,85 +15,99 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===================================================================
   const projectsData = [
     {
-      id: 'averqon-erp',
-      title: 'School ERP Platform',
-      category: 'saas',
-      categoryLabel: 'SaaS / School ERP',
-      role: 'Lead Full Stack Architect',
+      id: 'peeyem-traders',
+      title: 'Peeyem Traders',
+      category: 'web',
+      categoryLabel: 'Business Website',
+      role: 'Lead Web Developer',
       matchScore: '99% Match',
       isTop10: true,
       topBadge: 'TOP 10 • #1',
       featured: true,
-      image: 'img/portfolio-3.jpg',
-      demoUrl: 'https://averqonerp-web.onrender.com/',
-      subdomainUrl: 'https://erp.averqon.in',
+      image: 'img/peeyem-traders.jpg',
+      demoUrl: 'https://www.peeyemtraders.com/',
+      subdomainUrl: '',
       githubUrl: '',
-      shortDesc: 'A comprehensive cloud-based School ERP solution built with multi-tenant architecture to manage educational institutions through a centralized platform.',
-      fullDesc: 'An enterprise-grade School ERP system architected with multi-tenant isolation, automated fee management, timetable scheduling, attendance tracking, and examination grading. Designed to streamline administrative workflows across multi-campus institutions.',
+      shortDesc: 'Industrial conveyor belt business website for Peeyem Traders, based in Coimbatore.',
+      fullDesc: 'Industrial conveyor belt business website for Peeyem Traders, based in Coimbatore. Engineered with modern responsive web architecture, comprehensive product catalogs for heavy-duty multi-ply belts (NN/EP), chevron cleated belts, and industrial rubber sheets, technical specifications, and direct quotation inquiry workflows.',
       features: [
-        'Multi-Tenant Architecture with Subdomain Routing',
-        'Role-Based Access Control (Admin, Principal, Teacher, Accountant)',
-        'Real-time Student & Staff Attendance Tracking',
-        'Automated Fee Billing & Invoice Generation',
-        'Academic Timetable & Examination Dashboard',
-        'Performance & Grade Analytics Reports'
+        'Comprehensive Product Catalog for Conveyor Belts & Industrial Rubber',
+        'Direct Quotation & Technical Inquiry Routing System',
+        'Detailed Engineering Specifications for NN/EP & Chevron Belts',
+        'High-Performance Responsive B2B Interface',
+        'SEO-Optimized Architecture for Industrial Search Visibility'
       ],
-      techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Supabase', 'Tailwind CSS'],
-      credentials: [
-        { role: 'School Admin', email: 'admin@greenvalley.edu', pass: 'Demo@1234' },
-        { role: 'Principal', email: 'principal@greenvalley.edu', pass: 'Demo@1234' },
-        { role: 'Teacher', email: 'ramesh.krishnamurthy@greenvalley.edu', pass: 'Demo@1234' },
-        { role: 'Accountant', email: 'ramya.krishnan@greenvalley.edu', pass: 'Demo@1234' }
-      ]
+      techStack: ['Next.js', 'React.js', 'Tailwind CSS', 'Vercel', 'SEO Optimization']
     },
     {
-      id: 'billing-inventory',
-      title: 'Billing & Inventory',
-      category: 'saas',
-      categoryLabel: 'FinTech / ERP',
-      role: 'Lead Full Stack Developer',
+      id: 'gopika-beauty-care',
+      title: 'Gopika Beauty Care',
+      category: 'web',
+      categoryLabel: 'Beauty & Lifestyle',
+      role: 'Lead Web Developer',
       matchScore: '98% Match',
       isTop10: true,
       topBadge: 'TOP 10 • #2',
       featured: true,
-      image: 'img/portfolio-2.jpg',
-      demoUrl: 'https://billing.averqon.in/login',
+      image: 'img/gopika-beauty.jpg',
+      demoUrl: 'https://gopikabeautycare.vercel.app/',
       subdomainUrl: '',
       githubUrl: '',
-      shortDesc: 'A modern billing and inventory management platform designed for businesses to manage sales, purchases, stock, suppliers, and financial reports.',
-      fullDesc: 'A high-performance cloud solution for retail, wholesale, and service businesses. Provides instant invoicing, automated stock alerts, vendor purchase order workflows, and real-time ledger accounting.',
+      shortDesc: 'A professional website showcasing bridal makeovers, saree draping and beauty services, combining traditional elegance with modern styling.',
+      fullDesc: 'A professional website showcasing bridal makeovers, saree draping and beauty services, combining traditional elegance with modern styling. Features interactive bridal portfolios, service packages, client testimonials, and direct WhatsApp and online appointment scheduling.',
       features: [
-        'Instant POS Invoicing & GST-compliant Billing',
-        'Automated Low-Stock & Reorder Notifications',
-        'Supplier Ledger & Purchase Order Tracking',
-        'Sales Analytics, Profit & Loss Reporting',
-        'Barcode Scanning & Multi-Warehouse Support'
+        'Curated Bridal Makeover & Traditional Saree Draping Gallery',
+        'Interactive Beauty & Styling Services Menu with Package Details',
+        'Direct WhatsApp Consultation & Appointment Booking Integration',
+        'Mobile-First Responsive Layout with Smooth Visual Transitions',
+        'Elegant Luxury Visual Identity Designed for High Engagement'
       ],
-      techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Supabase', 'Tailwind CSS'],
-      credentials: [
-        { role: 'Demo Business Account', email: 'muneeswaran@averqon.in', pass: 'Munees@2004' },
-        { role: 'Demo Sandbox Account', email: 'demo@averqon.in', pass: 'Demo@123' }
-      ]
+      techStack: ['React.js', 'Next.js', 'Tailwind CSS', 'Vercel', 'Framer Motion']
     },
     {
-      id: 'whatnew-live',
-      title: 'WhatNew Live Marketplace',
-      category: 'commerce',
-      categoryLabel: 'Live Shopping / Auction',
-      role: 'Full Stack Developer',
+      id: 'aswathy-psychologist',
+      title: 'Aswathy Jeyarajasekar',
+      category: 'web',
+      categoryLabel: 'Healthcare & Psychology',
+      role: 'Lead Web Developer & UI Designer',
       matchScore: '97% Match',
       isTop10: true,
       topBadge: 'TOP 10 • #3',
       featured: true,
-      image: 'img/portfolio-5.jpg',
+      image: 'img/aswathy-psychologist.jpg',
+      demoUrl: 'https://www.aswathypsychologist.com/',
+      subdomainUrl: '',
+      githubUrl: '',
+      shortDesc: 'A professional psychology and counselling website designed to provide an empathetic digital space for clients to explore mental wellness and access professional support.',
+      fullDesc: 'A professional psychology and counselling website designed to provide an empathetic digital space for clients to explore mental wellness and access professional support. Built with a calm, accessible user interface offering telehealth session scheduling, therapy specialization details, and client intake guidance.',
+      features: [
+        'Empathetic Digital Space Designed for Psychological Safety',
+        'Confidential Online Telehealth Session Scheduling',
+        'Specialized Counseling Areas (Anxiety, Transitions, Personal Growth)',
+        'Client-Centered Practice Philosophy & Ethics Presentation',
+        'Clean, Accessible & Responsive Modern Architecture'
+      ],
+      techStack: ['Next.js', 'React.js', 'Tailwind CSS', 'Vercel', 'Responsive UI']
+    },
+    {
+      id: 'whatnew-live',
+      title: 'WhatNew',
+      category: 'commerce',
+      categoryLabel: 'Live Commerce Platform',
+      role: 'Lead Full Stack Developer',
+      matchScore: '99% Match',
+      isTop10: true,
+      topBadge: 'TOP 10 • #4',
+      featured: true,
+      image: 'img/whatnew.jpg',
       demoUrl: 'https://www.whatnew.live/',
       subdomainUrl: '',
       githubUrl: '',
-      shortDesc: 'A real-time live-commerce marketplace enabling buyers and sellers to interact through livestream shopping, auctions, and instant purchases.',
-      fullDesc: 'WhatNew Live merges social video streaming with digital commerce. Features ultra-low latency WebRTC video broadcast, live bidirectional chat via Socket.IO, interactive live bidding auctions, and instant payment settlement via Razorpay.',
+      shortDesc: 'A live commerce platform that enables users to discover products, participate in live bidding and purchase from verified sellers worldwide.',
+      fullDesc: 'A live commerce platform that enables users to discover products, participate in live bidding and purchase from verified sellers worldwide. Bridges social video streaming with digital commerce through ultra-low latency WebRTC broadcasts, bidirectional Socket.IO chat, live auctioning, and instant payment settlement.',
       features: [
-        'Real-time Video Livestreaming via WebRTC',
-        'Bidirectional Live Chat via Socket.IO',
+        'Real-Time Video Livestreaming via WebRTC',
+        'Bidirectional Interactive Live Chat via Socket.IO',
         'Live Product Auctioning with Instant Bidding Engine',
         'Direct Checkout & Secure Payment Integration (Razorpay)',
         'Merchant Management Dashboard & Sales Analytics'
@@ -104,148 +118,84 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      id: 'averqon-website',
-      title: 'Digital Agency Platform',
-      category: 'web',
-      categoryLabel: 'Agency & Solutions',
-      role: 'Lead Web Developer',
-      matchScore: '96% Match',
-      isTop10: false,
-      topBadge: 'FEATURED',
-      featured: true,
-      image: 'img/averqon-website.png',
-      demoUrl: 'https://averqon.in',
-      subdomainUrl: '',
-      githubUrl: '',
-      shortDesc: 'Modern agency showcase portal featuring software engineering services, web platforms, mobile apps, and enterprise consultation solutions.',
-      fullDesc: 'A modern corporate identity and digital showcase web application, engineered for high search visibility, responsive performance, interactive project showcases, and client onboarding.',
-      features: [
-        'High-Performance Static Generation & SSR',
-        'Modern Cinematic Agency Visual Design',
-        'Interactive Product & Service Showcases',
-        'Client Inquiry & Consultation Booking Integration'
-      ],
-      techStack: ['Next.js', 'React.js', 'Tailwind CSS', 'Vercel']
-    },
-    {
-      id: 'averqon-admin',
-      title: 'Admin Management Hub',
-      category: 'saas',
-      categoryLabel: 'Enterprise Operations Hub',
-      role: 'System Architect & Full Stack Developer',
-      matchScore: '95% Match',
-      isTop10: false,
-      topBadge: 'ENTERPRISE',
-      featured: false,
-      image: 'img/portfolio-6.jpg',
-      demoUrl: 'https://averqon-backend.onrender.com/admin',
-      subdomainUrl: '',
-      githubUrl: '',
-      shortDesc: 'A centralized administration platform engineered to manage clients, projects, users, operations, business workflows, and real-time analytics.',
-      fullDesc: 'Internal command center providing end-to-end organizational monitoring. Enables client CRM, milestone tracking, resource allocation, and revenue analytics under strict Role-Based Access Control.',
-      features: [
-        'Centralized Client CRM & Milestone Management',
-        'Real-time Financial & Operational Metrics',
-        'Granular RBAC Security & Audit Trails',
-        'Task Assignment & Project Status Pipelines'
-      ],
-      techStack: ['Next.js', 'PostgreSQL', 'Supabase', 'Tailwind CSS']
-    },
-    {
-      id: 'averqon-employee',
-      title: 'Employee Workforce Portal',
-      category: 'web',
-      categoryLabel: 'Internal Workforce Portal',
-      role: 'Lead Full Stack Developer',
-      matchScore: '94% Match',
-      isTop10: false,
-      topBadge: 'WORKFORCE',
-      featured: false,
-      image: 'img/5.jpg',
-      demoUrl: 'https://averqon-backend.onrender.com/employee/dashboard',
-      subdomainUrl: '',
-      githubUrl: '',
-      shortDesc: 'An internal employee management platform designed to streamline workforce management, attendance tracking, tasks, and team collaboration.',
-      fullDesc: 'Empowers team members with self-service attendance logging, task boards, project documentation, and peer communication tools backed by real-time Firebase databases.',
-      features: [
-        'Daily Work Log & Attendance Check-in',
-        'Team Kanban Task Board & Collaboration',
-        'Leave Management & Request Approvals',
-        'Performance Analytics & Milestone Reviews'
-      ],
-      techStack: ['React.js', 'Firebase', 'Firestore', 'Tailwind CSS']
-    },
-    {
-      id: 'smart-order-saas',
-      title: 'Smart Order SaaS',
-      category: 'saas',
-      categoryLabel: 'SaaS / Automation',
-      role: 'Full Stack Developer',
-      matchScore: '93% Match',
-      isTop10: false,
-      topBadge: 'AUTOMATION',
-      featured: false,
-      image: 'img/4.png',
-      demoUrl: '',
-      subdomainUrl: '',
-      githubUrl: '',
-      shortDesc: 'A multi-tenant SaaS platform that automates ordering workflows, customer engagement via WhatsApp automation, and general business operations.',
-      fullDesc: 'Automates customer interaction pipelines from initial inquiry to final order confirmation via WhatsApp & Twilio APIs, integrated with payment gateways and stock synchronization.',
-      features: [
-        'WhatsApp Automated Notification Engine (Twilio)',
-        'Multi-Tenant Customer Ordering Portals',
-        'Automated Order Status Broadcasts',
-        'Payment Link Generation (Razorpay)'
-      ],
-      techStack: ['React.js', 'Firebase', 'Razorpay', 'Twilio', 'Tailwind CSS']
-    },
-    {
-      id: 'student-quiz',
-      title: 'Student Quiz Management System',
-      category: 'web',
-      categoryLabel: 'EdTech / Exam Platform',
-      role: 'Full Stack Developer',
-      matchScore: '92% Match',
-      isTop10: false,
-      topBadge: 'EDTECH',
-      featured: false,
-      image: 'img/3.png',
-      demoUrl: '',
-      subdomainUrl: '',
-      githubUrl: '',
-      shortDesc: 'A full-stack educational platform for conducting secure online examinations and managing automated student assessments and dashboards.',
-      fullDesc: 'Robust online assessment solution with timed quizzes, automated evaluation, fraud prevention controls, student performance charts, and teacher grading dashboards.',
-      features: [
-        'Timed Online Examination System',
-        'Automated Instant Scoring & Result Generation',
-        'Teacher Test Bank & Question Management',
-        'Student Historical Performance Tracking'
-      ],
-      techStack: ['React.js', 'Node.js', 'Express.js', 'MySQL']
-    },
-    {
-      id: 'teknodo-store',
-      title: 'Teknodo E-Commerce Store',
+      id: 'retrostylings',
+      title: 'RetroStylings',
       category: 'commerce',
-      categoryLabel: 'E-Commerce Platform',
-      role: 'Full Stack Developer',
-      matchScore: '90% Match',
-      isTop10: false,
-      topBadge: 'STORE',
-      featured: false,
-      image: 'img/Screenshot (27).png',
-      demoUrl: '',
+      categoryLabel: 'E-commerce',
+      role: 'Lead Full Stack Developer',
+      matchScore: '98% Match',
+      isTop10: true,
+      topBadge: 'TOP 10 • #5',
+      featured: true,
+      image: 'img/retrostylings.jpg',
+      demoUrl: 'https://retrostylings.in/',
       subdomainUrl: '',
       githubUrl: '',
-      shortDesc: 'E-commerce online shopping portal featuring product catalog, cart, digital content, mobile & electronics ordering.',
-      fullDesc: 'Modern online shopping store with category filtering, search, cart management, responsive product showcases for mobile devices and smart watches.',
+      shortDesc: 'A modern fashion e-commerce platform combining timeless retro-inspired styles with contemporary fashion trends and a seamless online shopping experience.',
+      fullDesc: 'A modern fashion e-commerce platform combining timeless retro-inspired styles with contemporary fashion trends and a seamless online shopping experience. Features categorized product navigation, real-time cart and wishlist calculations, secure checkout supporting UPI, cards, and COD, and high-conversion UX.',
       features: [
-        'Product Catalog & Category Filtering',
-        'Dynamic Shopping Cart & Price Calculation',
-        'Responsive Mobile-First Interface',
-        'Customer Reviews & Rating Display'
+        'Dynamic Apparel Catalog with Multi-Filter Navigation',
+        'Instant Shopping Cart & Animated Wishlist System',
+        'Multi-Gateway Secure Checkout (UPI, Cards, NetBanking, COD)',
+        'Automated Order Confirmation & Dispatch Tracking',
+        'Mobile-First Responsive UX with Fluid Micro-Interactions'
       ],
-      techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap']
+      techStack: ['Next.js', 'React.js', 'Node.js', 'Tailwind CSS', 'Razorpay']
+    },
+    {
+      id: 'averqon-billing',
+      title: 'Averqon Billing',
+      category: 'saas',
+      categoryLabel: 'SaaS / POS & Business Management',
+      role: 'Lead Full Stack Architect',
+      matchScore: '99% Match',
+      isTop10: true,
+      topBadge: 'TOP 10 • #6',
+      featured: true,
+      image: 'img/averqon-billing.jpg',
+      demoUrl: 'http://billing.averqon.in/',
+      subdomainUrl: '',
+      githubUrl: '',
+      shortDesc: 'A multi-business billing and POS platform offering business-specific interfaces, dashboards, branding, billing workflows and management features.',
+      fullDesc: 'A multi-business billing and POS platform offering business-specific interfaces, dashboards, branding, billing workflows and management features. Provides high-speed POS invoicing, GST-compliant billing, multi-store inventory synchronization, supplier ledger tracking, and real-time financial reporting.',
+      features: [
+        'Multi-Business Isolated Workspaces & Custom Branding',
+        'Instant Point-of-Sale (POS) & GST-Compliant Billing Workflows',
+        'Automated Low-Stock Notifications & Real-Time Inventory Control',
+        'Supplier Ledger, Purchase Orders & Expense Tracking',
+        'Comprehensive Financial Analytics & Profit & Loss Reporting',
+        'Role-Based Access Control (Admin, Manager, Cashier)'
+      ],
+      techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Supabase', 'Tailwind CSS'],
+      credentials: [
+        { role: 'Demo Business Account', email: 'muneeswaran@averqon.in', pass: 'Munees@2004' },
+        { role: 'Demo Sandbox Account', email: 'demo@averqon.in', pass: 'Demo@123' }
+      ]
+    },
+    {
+      id: 'maxx-joy',
+      title: 'MAXX JOY',
+      category: 'web',
+      categoryLabel: 'Travel & Tourism',
+      role: 'Lead Web Developer & Designer',
+      matchScore: '97% Match',
+      isTop10: true,
+      topBadge: 'TOP 10 • #7',
+      featured: true,
+      image: 'img/maxxjoy.jpg',
+      demoUrl: 'https://maxxjoytours.com/',
+      subdomainUrl: '',
+      githubUrl: '',
+      shortDesc: 'A travel and tourism website designed to showcase destinations and help customers explore travel experiences.',
+      fullDesc: 'A travel and tourism website designed to showcase destinations and help customers explore travel experiences. Engineered with captivating destination showcases, customized holiday package builders, interactive travel itineraries, customer review highlights, and direct inquiry capture pipelines.',
+      features: [
+        'Interactive Destination Showcases & Global Tour Spotlights',
+        'Customized Holiday Package & Itinerary Inquiry System',
+        'Domestic & International Travel Experience Highlights',
+        'Direct WhatsApp & Instant Lead Capture Integration',
+        'Fast-Loading Responsive Architecture with Modern Media Layouts'
+      ],
+      techStack: ['Next.js', 'React.js', 'Tailwind CSS', 'Vercel', 'Responsive UI']
     }
   ];
 
@@ -559,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         matchesQuery = textToSearch.includes(query);
       }
-
+   
       const shouldShow = matchesCategory && matchesQuery;
       card.style.display = shouldShow ? 'flex' : 'none';
       if (shouldShow) visibleCount++;
@@ -661,7 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Credentials Box (School ERP, Billing & Inventory, WhatNew Live)
+    // Credentials Box (Averqon Billing, WhatNew)
     if (credentialsBox) {
       if (project.credentials && project.credentials.length > 0) {
         credentialsBox.style.display = 'block';
@@ -701,6 +651,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (liveDemoBtn) {
       if (project.demoUrl) {
         liveDemoBtn.href = project.demoUrl;
+        const btnLabel = (project.category === 'saas' || project.category === 'commerce') ? 'Live Platform' : 'Live Website';
+        liveDemoBtn.innerHTML = `<i class="fa fa-arrow-up-right-from-square"></i> ${btnLabel}`;
         liveDemoBtn.style.display = 'inline-flex';
       } else {
         liveDemoBtn.style.display = 'none';
