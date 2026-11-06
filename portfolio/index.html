@@ -915,22 +915,28 @@
 
         <!-- Interactive Contact Form -->
         <div class="contact-form-panel">
-          <form id="netflixContactForm" novalidate>
+          <form id="netflixContactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- Web3Forms Access Key & Configuration -->
+            <input type="hidden" name="access_key" value="e6432705-6d00-4155-a88d-3e432a533f60">
+            <input type="hidden" name="from_name" value="Muneeswaran Portfolio Contact">
+            <!-- Honey pot spam prevention -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
             <div class="form-row-custom">
               <div class="form-group-custom">
                 <label for="contactName" class="form-label-custom">Your Name *</label>
-                <input type="text" id="contactName" class="form-control-netflix" placeholder="e.g. John Doe" required>
+                <input type="text" id="contactName" name="name" class="form-control-netflix" placeholder="e.g. John Doe" required>
               </div>
               <div class="form-group-custom">
                 <label for="contactEmail" class="form-label-custom">Your Email *</label>
-                <input type="email" id="contactEmail" class="form-control-netflix" placeholder="e.g. john@example.com" required>
+                <input type="email" id="contactEmail" name="email" class="form-control-netflix" placeholder="e.g. john@example.com" required>
               </div>
             </div>
 
             <div class="form-row-custom">
               <div class="form-group-custom">
                 <label for="contactProjectType" class="form-label-custom">Project Type</label>
-                <select id="contactProjectType" class="form-control-netflix">
+                <select id="contactProjectType" name="project_type" class="form-control-netflix">
                   <option value="SaaS & ERP Application">SaaS & ERP Platform</option>
                   <option value="Web Development">Custom Web Application</option>
                   <option value="E-Commerce & Live Auction">E-Commerce & Marketplace</option>
@@ -940,13 +946,13 @@
               </div>
               <div class="form-group-custom">
                 <label for="contactSubject" class="form-label-custom">Subject *</label>
-                <input type="text" id="contactSubject" class="form-control-netflix" placeholder="Project title or inquiry" required>
+                <input type="text" id="contactSubject" name="subject" class="form-control-netflix" placeholder="Project title or inquiry" required>
               </div>
             </div>
 
             <div class="form-group-custom">
               <label for="contactMessage" class="form-label-custom">Project Details or Message *</label>
-              <textarea id="contactMessage" class="form-control-netflix" rows="5" placeholder="Tell me about your requirements, timeline, or business challenge..." required></textarea>
+              <textarea id="contactMessage" name="message" class="form-control-netflix" rows="5" placeholder="Tell me about your requirements, timeline, or business challenge..." required></textarea>
             </div>
 
             <button type="submit" class="btn-netflix-submit" id="contactSubmitBtn">

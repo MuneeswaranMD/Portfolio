@@ -759,7 +759,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => navObserver.observe(section));
 
   // ===================================================================
-  // 10. CONTACT FORM VALIDATION & INTERACTIVE SUBMISSION
+  // 10. CONTACT FORM VALIDATION & INTERACTIVE SUBMISSION (Web3Forms)
   // ===================================================================
   const contactForm = document.getElementById('netflixContactForm');
   const submitBtn = document.getElementById('contactSubmitBtn');
@@ -767,7 +767,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const alertError = document.getElementById('contactAlertError');
 
   if (contactForm && submitBtn) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('contactName')?.value.trim();
@@ -794,36 +794,39 @@ document.addEventListener('DOMContentLoaded', () => {
       const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Sending message...';
 
-      // Check if we can submit to mail/contact.php
-      const formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('subject', projectType ? `[${projectType}] ${subject}` : subject);
-      formData.append('message', message);
+      // Web3Forms payload
+      const formData = new FormData(contactForm);
+      if (!formData.has('access_key')) {
+        formData.append('access_key', 'e6432705-6d00-4155-a88d-3e432a533f60');
+      }
+      formData.set('name', name);
+      formData.set('email', email);
+      formData.set('subject', projectType ? `[${projectType}] ${subject || 'New Inquiry'}` : (subject || 'New Portfolio Message'));
+      formData.set('message', message);
 
-      fetch('mail/contact.php', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => {
-        if (response.ok) {
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
           showFormAlert('success', `Thank you, ${name}! Your message has been sent successfully. I will get back to you soon.`);
           contactForm.reset();
         } else {
-          // If server error or PHP not running locally, provide friendly demo success confirmation
-          showFormAlert('success', `Thank you, ${name}! Your inquiry has been recorded. I'll reach out to ${email} shortly.`);
-          contactForm.reset();
+          showFormAlert('error', data.message || 'Unable to send message. Please try again or email muneeswaranmd2004@gmail.com directly.');
         }
-      })
-      .catch(() => {
-        // Fallback for static hosting without active PHP mailserver
-        showFormAlert('success', `Thank you, ${name}! Your message has been received. You can also directly contact muneeswaranmd2004@gmail.com.`);
-        contactForm.reset();
-      })
-      .finally(() => {
+      } catch (err) {
+        showFormAlert('error', 'Network error. Please try again or reach out directly at muneeswaranmd2004@gmail.com.');
+      } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
-      });
+      }
     });
   }
 
